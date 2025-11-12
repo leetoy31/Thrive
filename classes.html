@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - THRIVE Fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo" onclick="location.href='index.html'">THRIVE</div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="classes.html" class="active">CLASSES</a></li>
+                <li><a href="why-us.html">WHY US?</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Our Classes</h1>
+            <p>Discover the perfect workout for your fitness journey</p>
+        </div>
+    </section>
+
+    <section class="classes" id="classes">
+        <div class="classes-container">
+            <div class="class-item">
+                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600" alt="Strength Training" class="class-image">
+                <div class="class-info">
+                    <h3>Strength Training</h3>
+                    <p>Build muscle, increase strength, and transform your physique with our comprehensive strength training programs. Our expert trainers will guide you through proper form and technique to maximize results while preventing injury.</p>
+                    <p><strong>Duration:</strong> 60 minutes | <strong>Level:</strong> All Levels</p>
+                    <button class="button button-primary" onclick="openModal('class')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="class-item">
+                <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600" alt="Yoga Sessions" class="class-image">
+                <div class="class-info">
+                    <h3>Yoga Sessions</h3>
+                    <p>Find balance and flexibility through various yoga styles including Hatha, Vinyasa, and Power Yoga. Perfect for all skill levels, our yoga classes help improve flexibility, reduce stress, and enhance overall well-being.</p>
+                    <p><strong>Duration:</strong> 45-90 minutes | <strong>Level:</strong> Beginner to Advanced</p>
+                    <button class="button button-primary" onclick="openModal('class')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="class-item">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600" alt="Cardio Blast" class="class-image">
+                <div class="class-info">
+                    <h3>Cardio Blast</h3>
+                    <p>Burn calories and boost your cardiovascular health with high-energy cardio workouts. From HIIT to cycling, our cardio classes are designed to push your limits and deliver maximum results in minimum time.</p>
+                    <p><strong>Duration:</strong> 45 minutes | <strong>Level:</strong> Intermediate to Advanced</p>
+                    <button class="button button-primary" onclick="openModal('class')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="class-item">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=600" alt="Calisthenics" class="class-image">
+                <div class="class-info">
+                    <h3>Calisthenics</h3>
+                    <p>Master bodyweight exercises and build functional strength with our calisthenics program. Learn advanced movements, improve coordination, and develop impressive control over your body without any equipment.</p>
+                    <p><strong>Duration:</strong> 60 minutes | <strong>Level:</strong> All Levels</p>
+                    <button class="button button-primary" onclick="openModal('class')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="class-item">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600" alt="Pilates" class="class-image">
+                <div class="class-info">
+                    <h3>Pilates</h3>
+                    <p>Strengthen your core and improve posture with our Pilates classes. Focus on controlled movements, breathing techniques, and building long, lean muscles while enhancing mind-body connection.</p>
+                    <p><strong>Duration:</strong> 50 minutes | <strong>Level:</strong> All Levels</p>
+                    <button class="button button-primary" onclick="openModal('class')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="class-item">
+                <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?w=600" alt="Boxing" class="class-image">
+                <div class="class-info">
+                    <h3>Boxing & Kickboxing</h3>
+                    <p>Release stress and build power with our boxing and kickboxing classes. Learn proper technique, improve coordination, and get an intense full-body workout that burns calories and builds confidence.</p>
+                    <p><strong>Duration:</strong> 60 minutes | <strong>Level:</strong> All Levels</p>
+                    <button class="button button-primary" onclick="openModal('class')">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="schedule-container">
+            <h2 class="section-title">Weekly Schedule</h2>
+            <p class="section-subtitle">Plan your week with our comprehensive class schedule</p>
+            
+            <div class="schedule-grid">
+                <div class="schedule-day">
+                    <h3>Monday</h3>
+                    <div class="schedule-item">
+                        <span class="time">6:00 AM</span>
+                        <span class="class-name">Strength Training</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">9:00 AM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">5:00 PM</span>
+                        <span class="class-name">Cardio Blast</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">7:00 PM</span>
+                        <span class="class-name">Boxing</span>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Tuesday</h3>
+                    <div class="schedule-item">
+                        <span class="time">6:00 AM</span>
+                        <span class="class-name">Pilates</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">10:00 AM</span>
+                        <span class="class-name">Calisthenics</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">5:30 PM</span>
+                        <span class="class-name">Strength Training</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">7:00 PM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Wednesday</h3>
+                    <div class="schedule-item">
+                        <span class="time">6:00 AM</span>
+                        <span class="class-name">Cardio Blast</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">9:00 AM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">5:00 PM</span>
+                        <span class="class-name">Boxing</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">7:00 PM</span>
+                        <span class="class-name">Strength Training</span>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Thursday</h3>
+                    <div class="schedule-item">
+                        <span class="time">6:00 AM</span>
+                        <span class="class-name">Strength Training</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">10:00 AM</span>
+                        <span class="class-name">Pilates</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">5:30 PM</span>
+                        <span class="class-name">Calisthenics</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">7:00 PM</span>
+                        <span class="class-name">Cardio Blast</span>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Friday</h3>
+                    <div class="schedule-item">
+                        <span class="time">6:00 AM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">9:00 AM</span>
+                        <span class="class-name">Boxing</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">5:00 PM</span>
+                        <span class="class-name">Strength Training</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">7:00 PM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Saturday</h3>
+                    <div class="schedule-item">
+                        <span class="time">8:00 AM</span>
+                        <span class="class-name">Cardio Blast</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">10:00 AM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">12:00 PM</span>
+                        <span class="class-name">Calisthenics</span>
+                    </div>
+                </div>
+
+                <div class="schedule-day">
+                    <h3>Sunday</h3>
+                    <div class="schedule-item">
+                        <span class="time">9:00 AM</span>
+                        <span class="class-name">Yoga</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">11:00 AM</span>
+                        <span class="class-name">Pilates</span>
+                    </div>
+                    <div class="schedule-item">
+                        <span class="time">4:00 PM</span>
+                        <span class="class-name">Boxing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 THRIVE Fitness. All rights reserved. Built with passion for fitness.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2 id="modalTitle">Class Information</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

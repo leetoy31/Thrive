@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - THRIVE Fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo" onclick="location.href='index.html'">THRIVE</div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="why-us.html">WHY US?</a></li>
+                <li><a href="contact.html" class="active">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Get In Touch</h1>
+            <p>Ready to start your fitness journey? Contact us today!</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info-grid">
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">📍</div>
+                    <h3>Visit Us</h3>
+                    <p>123 Fitness Street<br>Health City, HC 12345<br>United States</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p>Main: (555) 123-4567<br>Support: (555) 123-4568<br>Mon-Fri: 6AM - 9PM</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <p>info@thrivefitness.com<br>support@thrivefitness.com<br>We reply within 24 hours</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-info-icon">🕐</div>
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Fri: 6:00 AM - 9:00 PM<br>Sat-Sun: 8:00 AM - 6:00 PM<br>Holidays: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #c41e3a;">Send Us a Message</h2>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="classes">Classes Information</option>
+                            <option value="personal-training">Personal Training</option>
+                            <option value="general">General Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter">
+                        <span>Subscribe to our newsletter for fitness tips and special offers</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="map-placeholder">
+                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200" alt="Location Map" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <div class="map-overlay">
+                    <p>123 Fitness Street, Health City, HC 12345</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common questions</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What should I bring to my first class?</h3>
+                    <p>Bring comfortable workout clothes, athletic shoes, a water bottle, and a towel. We provide all necessary equipment including mats, weights, and resistance bands.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you offer trial memberships?</h3>
+                    <p>Yes! We offer a 7-day free trial for new members. This gives you full access to our facilities and classes to see if Thrive is the right fit for you.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I freeze my membership?</h3>
+                    <p>Absolutely. We understand life happens. You can freeze your membership for up to 3 months per year with advance notice.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Are personal training sessions included?</h3>
+                    <p>Personal training sessions are included with our Premium and Elite plans. Basic members can add personal training sessions at a discounted rate.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What safety measures do you have in place?</h3>
+                    <p>We maintain strict cleaning protocols, have trained staff on-site at all times, and ensure all equipment meets safety standards. First aid is always available.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do you have shower facilities?</h3>
+                    <p>Yes! We have clean, modern locker rooms with showers, lockers, and amenities. Towels are provided for all members.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 THRIVE Fitness. All rights reserved. Built with passion for fitness.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Us - THRIVE Fitness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo" onclick="location.href='index.html'">THRIVE</div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="classes.html">CLASSES</a></li>
+                <li><a href="why-us.html" class="active">WHY US?</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>Why Choose Thrive?</h1>
+            <p>Experience the difference that sets us apart</p>
+        </div>
+    </section>
+
+    <section class="why-us" id="why">
+        <div class="why-container">
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🏋️</div>
+                    <h3>Expert Trainers</h3>
+                    <p>Our certified trainers bring years of experience and passion to help you achieve your fitness goals safely and effectively. Each trainer specializes in different areas to provide comprehensive guidance.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Modern Equipment</h3>
+                    <p>State-of-the-art facilities with the latest fitness equipment to ensure you have everything you need for an optimal workout. We continuously upgrade our equipment to match industry standards.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <h3>Community Support</h3>
+                    <p>Join a vibrant community of like-minded individuals who motivate and inspire each other on their fitness journeys. Build lasting friendships while achieving your goals together.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <h3>Flexible Schedule</h3>
+                    <p>With classes available throughout the day and week, you can easily find times that fit your busy lifestyle. Early morning to late evening options available every day.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">💪</div>
+                    <h3>Personalized Programs</h3>
+                    <p>Receive customized workout plans tailored to your specific goals, fitness level, and preferences. Our trainers work one-on-one to design programs that deliver results.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Results-Driven</h3>
+                    <p>We track your progress and adjust your program to ensure continuous improvement. Regular assessments help us optimize your training for maximum effectiveness.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Award-Winning Facility</h3>
+                    <p>Recognized as one of the top fitness centers in the region, with awards for excellence in service, cleanliness, and member satisfaction.</p>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🍎</div>
+                    <h3>Nutrition Guidance</h3>
+                    <p>Access to nutrition experts who provide meal planning advice and dietary recommendations to complement your fitness routine and accelerate your results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="section-title">What Our Members Say</h2>
+            <p class="section-subtitle">Real stories from real people who transformed their lives</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="Member">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Thrive changed my life! The trainers are incredibly supportive and the community is amazing. I've lost 30 pounds and gained so much confidence."</p>
+                        <p class="testimonial-author">- Sarah Johnson</p>
+                        <p class="testimonial-role">Member for 1 year</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200" alt="Member">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"Best gym I've ever joined. The equipment is top-notch, and the variety of classes keeps my workouts exciting. Highly recommend!"</p>
+                        <p class="testimonial-author">- Michael Chen</p>
+                        <p class="testimonial-role">Member for 2 years</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200" alt="Member">
+                    </div>
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"The yoga classes here are phenomenal. The instructors are knowledgeable and create such a peaceful, welcoming environment."</p>
+                        <p class="testimonial-author">- Emily Rodriguez</p>
+                        <p class="testimonial-role">Member for 6 months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Start Your Fitness Journey?</h2>
+            <p>Join thousands of members who have transformed their lives at Thrive Fitness</p>
+            <div class="cta-buttons">
+                <button class="button button-primary" onclick="location.href='contact.html'">Get Started Today</button>
+                <button class="button" onclick="openModal('purchase')">View Membership Plans</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 THRIVE Fitness. All rights reserved. Built with passion for fitness.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2 id="modalTitle">Membership Plans</h2>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
